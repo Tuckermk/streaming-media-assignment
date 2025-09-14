@@ -2,7 +2,7 @@ const http = require('http');
 const htmlHandler = require('./htmlResponse.js');
 const mediaHandler = require('./mediaResponse.js');
 
-const port = process.env.port || process.env.NODE_PORT || 3000;
+const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
 function onRequest(request, response) {
   console.log(request.url);
